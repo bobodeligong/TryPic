@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My experiment</title>
+  <script src="jspsych-6.0.5/jspsych.js"></script>
+  <script src="jspsych-6.0.5/plugins/jspsych-image-keyboard-response.js"></script>
+  <link rel="stylesheet" href="jspsych-6.0.5/css/jspsych.css"></link>
+  <!-- CHANGE: Loading the external main experiment script -->
+  <script src="task_main.js"></script> 
+</head>
+
+<body></body>
+<script>
+  /* start the experiment */
+  jsPsych.init({
+    timeline: timeline,
+    on_finish: function () {
+      jsPsych.data.displayData();
+    }
+  });
+</script>
+
+</html>
